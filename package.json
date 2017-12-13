@@ -1,0 +1,37 @@
+{
+  "name": "fruitbasket",
+  "version": "1.0.0",
+  "description": "Fruit basket",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server",
+    "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y "
+  },
+  "repository": {
+    "type": "git",
+    "url": "fruitbasket"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "author": "Dipanshu",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
